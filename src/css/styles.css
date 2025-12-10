@@ -597,6 +597,90 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
   line-height: 1.6;
 }
+/* =========================================
+   8. LEGAL PAGES STYLES
+   ========================================= */
+   .pages {
+    padding-top: 140px; /* Отступ от хедера */
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+.legal-wrapper {
+    max-width: 800px; /* Ограничиваем ширину для удобства чтения */
+    margin: 0 auto;
+}
+
+.legal-wrapper h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.legal-content h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--color-primary);
+    padding-left: 15px;
+}
+
+.legal-content p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.legal-content strong {
+    color: var(--color-text); /* Белый цвет для важных слов */
+    font-weight: 600;
+}
+
+/* Стилизация списков */
+.legal-list {
+    margin-bottom: 30px;
+}
+
+.legal-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* Кастомные маркеры списка (квадратики) */
+.legal-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 8px var(--color-primary);
+    border-radius: 1px;
+}
+
+/* Ссылка в тексте */
+.legal-link {
+    color: var(--color-primary);
+    border-bottom: 1px dashed var(--color-primary);
+    padding-bottom: 2px;
+}
+
+.legal-link:hover {
+    color: #fff;
+    border-bottom-style: solid;
+}
+
+/* Кнопка "На главную" в хедере (маленькая версия) */
+.btn--sm {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+}
 
 /* Кнопки */
 .btn {
